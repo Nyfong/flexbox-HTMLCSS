@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
@@ -46,7 +47,10 @@
     <main>
       <section class="sec-1">
         <div class="title">
-          <h1>Most popular course</h1>
+          <div class="typejs" style="height: 60px">
+            <h1 id="element"></h1>
+          </div>
+
           <p>
             Master spring boot and spring security by building a shopping cart
             backend project. Starting with project generation, you'll learn to
@@ -900,5 +904,16 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- typejs -->
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Welcome to Most Popular", "&amp; Information courses."],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
